@@ -1,8 +1,6 @@
 export async function seed(knex) {
-  // First, delete all existing records in the "users" table
   await knex('users').del()
 
-  // Now, insert some funny user seed entries into the "users" table with IDs
   await knex('users').insert([
     {
       id: 1,

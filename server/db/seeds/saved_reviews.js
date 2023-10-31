@@ -1,8 +1,6 @@
 export async function seed(knex) {
-  // First, delete all existing records in the "saved_reviews" table
   await knex('saved_reviews').del()
 
-  // Now, insert some sample data entries into the "saved_reviews" table with IDs
   await knex('saved_reviews').insert([
     {
       id: 1,

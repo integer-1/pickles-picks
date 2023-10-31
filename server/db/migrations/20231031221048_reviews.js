@@ -4,7 +4,7 @@
  */
 export async function up(knex) {
   return knex.schema.createTable('reviews', (table) => {
-    table.increments('id')
+    table.increments('id').primary()
     table.string('location')
     table.string('title')
     table.text('text')
