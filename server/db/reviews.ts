@@ -7,14 +7,14 @@ export async function getAllReviews(db = connection): Promise<Review[]> {
   return db('reviews').select()
 }
 
-/* export async function getReviewById(
+export async function getReviewById(
   id: number,
   db = connection
 ): Promise<Review[]> {
   return db('reviews').where({ id }).select()
 }
 
-export async function addReview(
+/* export async function addReview(
   review: Review,
   db = connection
 ): Promise<Review> {

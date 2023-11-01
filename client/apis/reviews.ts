@@ -10,7 +10,7 @@ export async function getAllReviews() {
 
 export async function getReviewById(id: number) {
   const res = await request.get(rootUrl + `/reviews/${id}`)
-  return res.body.reviews
+  return res.body.review
 }
 
 export async function addReview(form: Review) {
