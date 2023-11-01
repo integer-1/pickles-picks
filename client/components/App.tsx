@@ -7,13 +7,7 @@ import Home from './Home'
 function App() {
   return (
     <>
-      <IfNotAuthenticated>
-        <Home />
-      </IfNotAuthenticated>
-
-      <IfAuthenticated>
-        <Outlet />
-      </IfAuthenticated>
+      <Home />
     </>
   )
 }

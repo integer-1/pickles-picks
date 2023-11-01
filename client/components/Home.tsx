@@ -5,10 +5,15 @@ import { Link } from 'react-router-dom'
 function Home() {
   return (
     <>
-      <h2>Welcome!</h2>
-      <Login />
-      <Register />
-      <Link to="/reviews">Continue without sign in</Link>
+      <div className="landing-page">
+        <h2>Welcome to Pickle's Picks!</h2>
+        <h3>See all my favourite places to eat!</h3>
+        <Login />
+        <Register />
+        <Link to="/reviews" className="button">
+          Continue without sign in
+        </Link>
+      </div>
     </>
   )
 }
