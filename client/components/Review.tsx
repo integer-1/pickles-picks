@@ -30,9 +30,10 @@ const Review = () => {
   return (
     <div>
       <h1>{reviewById.title}</h1>
-      <p>Date: {reviewById.date}</p>
+      <p>Location: {reviewById.location}</p>
       <p>Rating: {reviewById.rating}</p>
       <p>{reviewById.text}</p>
+      <p>Date: {reviewById.date}</p>
     </div>
   )
 }
