@@ -1,35 +1,20 @@
 import { useAuth0 } from '@auth0/auth0-react'
 import { useState } from 'react'
+import { IfAuthenticated, IfNotAuthenticated } from './Authenticated'
+import ReviewList from './ReviewList'
 
 function Login() {
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
-
-  //Suwon will change this fuction after make back-end and font-end api
-  const handleLogin = () => {
-    if (username === 'username' && password === 'password') {
-      alert('login')
-    } else {
-      alert('Please check')
-    }
-  }
-  
+  const { loginWithRedirect, logout, user } = useAuth0()
   return (
     <>
-      <h2 className="page-title">Please login</h2>
-      <input
-        type="text"
-        placeholder="username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button onClick={handleLogin}>login</button>
+      <IfAuthenticated>
+        <ReviewList />
+      </IfAuthenticated>
+      <IfNotAuthenticated>
+        <button className="button" onClick={() => loginWithRedirect()}>
+          Login
+        </button>
+      </IfNotAuthenticated>
     </>
   )
 }
