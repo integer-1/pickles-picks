@@ -3,7 +3,7 @@ import * as db from '../db/reviews.ts'
 
 const router = Router()
 
-// GET
+// GET all reviews
 router.get('/', async (req, res) => {
   try {
     const reviews = await db.getAllReviews()
@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
   }
 })
 
-// GET by Id
+// GET review by Id
 router.get('/:id', async (req, res) => {
   const id = req.params.id
   try {
@@ -27,3 +27,5 @@ router.get('/:id', async (req, res) => {
     res.status(500).json({ message: 'Something went wrong' })
   }
 })
+
+export default router
