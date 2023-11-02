@@ -1,75 +1,135 @@
-* {
-  box-sizing: border-box;
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the page layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px;
+}
+
+/* Navigation Styles */
+.nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.dropdown {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* Reviews List Styles */
+.reviews-list {
+  margin: 0 auto;
+  width: 80%;
+}
+
+ul {
+  list-style: none;
+}
+
+.review-post {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.review-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 body {
-  position: absolute;
-  top: 0;
-  left: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
   margin: 0;
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #004a8f;
+  padding: 0;
 }
 
-h2{
-  margin-left: 20px;
-}
-
-h3{
-  margin-left: 20px;
-}
-
-.landing-page{
-  margin: 50% 50%;
-  width: 500px;
-  padding: 10px 10px;
-  justify-content: center;
-}
-
-.nav-container {
-  background-color: #A2D2FF;
-  width: 100vw;
-  height: 80px;
-  padding: 0px 20px;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
-}
-
+/* Login Component Styles */
 .button {
-  margin-left: 20px;
-  border: none;
-  color: #004a8f;
-  background-color: #efd4ff;
-  padding: 8px 16px;
-  border-radius: 5px;
-  font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
   text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 10px;
 }
 
 .button:hover {
-  cursor: pointer;
-  background-color: #004a8f;
-  color: #efd4ff;
+  background-color: #0056b3;
 }
 
-.button-container {
-  display: flex;
-  align-items: center;
+/* Review Component Styles */
+.review-container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
 }
 
-.header-title {
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 1px;
-  font-size: 1.5em;
+h1 {
+  font-size: 2rem;
+  margin: 20px 0;
+  color: #333;
 }
 
-.title-link {
-  text-decoration: none;
-  color: #004a8f;
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #555;
 }
 
-.page-title {
-  margin-left: 20px;
+/* Error Message Styles */
+.error-message {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+/* Loading Styles */
+.loading-message {
+  font-size: 1.5rem;
+  color: #007BFF;
+  text-align: center;
+}
+
+/* Logout Button Styles */
+.logout-button {
+  background-color: #dc3545;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
 }
