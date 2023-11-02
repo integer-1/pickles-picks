@@ -3,7 +3,6 @@ import { getAllReviews } from '../apis/reviews'
 import Header from './Header'
 import { Link } from 'react-router-dom'
 import { SetStateAction, useState } from 'react'
-import { Review } from '../../models/reviews'
 
 function ReviewList() {
   const {
