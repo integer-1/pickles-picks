@@ -47,14 +47,16 @@ function ReviewList() {
   return (
     <>
       <Header />
-      <h1>Review List</h1>
       <div className="nav">
+        {' '}
+        <h2>Dog-friendly recommendations ☕🍸🍝 reviewed by Pickles himself</h2>
         <select
           className="dropdown"
           onChange={(e) => toggleSortOption(e.target.value)}
         >
-          <option value="desc">Rating Descending</option>
-          <option value="asc">Rating Ascending</option>
+          {' '}
+          <option value="desc">Top Rated</option>
+          <option value="asc">Lowest Rated</option>
         </select>
       </div>
       <div className="reviews-list">

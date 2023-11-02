@@ -19,7 +19,7 @@ function Header() {
         </div>
         <div className="button-container">
           <IfAuthenticated>
-            <p className="">{user?.nickname}</p>
+            <p className="authentication">{user?.nickname}</p>
             <button className="button" onClick={() => logout()}>
               Logout
             </button>
