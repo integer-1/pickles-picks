@@ -12,13 +12,15 @@ function Home() {
           src="client/styles/MiscData/Screenshot 2023-11-03 103600.png"
           alt="Pickles portrait"
           width="500"
-          height="600"
+          height="500"
         />
-        <Login />
-        <Register />
-        <Link to="/reviews" className="button">
-          Continue without sign in
-        </Link>
+        <div className="authentication">
+          <Login />
+          <Register />
+          <Link to="/reviews" className="button">
+            Continue without sign in
+          </Link>
+        </div>
       </div>
     </>
   )
