@@ -12,7 +12,7 @@ function Home() {
       navigate('/reviews')
     }
   }, [isAuthenticated, navigate])
-  
+
   return (
     <>
       <div className="landing-page">
