@@ -12,7 +12,7 @@ const router = createBrowserRouter(routes)
 const root = createRoot(document.getElementById('app') as HTMLElement)
 root.render(
   <Auth0Provider
-    domain="pikpiko-mark.au.auth0.com"
+    domain="https://pikpiko-mark.au.auth0.com"
     clientId="PLhgc7PqslLSpPXfcj0drSzekMo7D6Bi"
     authorizationParams={{
       redirect_uri: window.location.origin,
