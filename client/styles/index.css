@@ -1,59 +1,174 @@
-* {
-  box-sizing: border-box;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Titan+One&display=swap');
+/* STYLES APPLYING TO ENTIRE DOCUMENT */
 body {
-  position: absolute;
-  top: 0;
-  left: 0;
+  font-family: 'Inter', sans-serif;
+  color: #333;
   margin: 0;
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #004a8f;
+  padding: 0;
+  background-color: lightgreen;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: green;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.button:hover {
+  background-color:rgb(35, 168, 35);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 20px 0;
+  color: green;
+}
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #555;
+}
+
+.error-message {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+.loading-message {
+  font-size: 1.5rem;
+  color: #007BFF;
+  text-align: center;
+}
+
+/* HEADER STYLING */
 .nav-container {
-  background-color: #A2D2FF;
-  width: 100vw;
+  background-color: lightgoldenrodyellow;
+  width: 100%; /* 100% instead of 100vw makes it fit the view */
   height: 80px;
-  padding: 0px 20px;
   display: flex; 
   justify-content: space-between;
   align-items: center;
 }
 
-.button {
-  margin-left: 20px;
-  border: none;
-  color: #004a8f;
-  background-color: #efd4ff;
-  padding: 8px 16px;
-  border-radius: 5px;
-  font-weight: bold;
+.title-container{
+  padding: 20px;
 }
 
-.button:hover {
-  cursor: pointer;
-  background-color: #004a8f;
-  color: #efd4ff;
+.title-link:hover{
+  text-decoration-color: green;
 }
+
+.header-title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Titan One', sans-serif;
+  font-weight: 400;
+} 
 
 .button-container {
   display: flex;
   align-items: center;
 }
 
-.header-title {
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 1px;
-  font-size: 1.5em;
+.authentication{}
+
+/* HOME.TSX / LANDING PAGE STYLING */
+
+.img{
+  width: 35vh;
+  height: 35vh;
+  padding: 20px;
 }
 
-.title-link {
-  text-decoration: none;
-  color: #004a8f;
+.landing-page {
+  background-color: lightgoldenrodyellow;
+  padding: 40px;
+  margin: 90px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
-.page-title {
-  margin-left: 20px;
+.landing-page h2 {
+  font-size: 30px; 
+  margin-bottom: 0px;
+  color: #008000;
+  font-family: 'Titan One', sans-serif;
+  font-weight: 200;
+}
+
+.landing-page h3 {
+  margin-top: 10px;
+  font-weight: 200;
+  font-size: 18px; 
+  color: green; 
+}
+
+.landing-page-buttons{}
+
+/* REVIEW LIST STYLING */
+
+.review-list-header {
+  text-align: center;
+  margin: 20px;
+}
+
+.dropdown {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.reviews-list {
+  margin: 0 auto;
+  width: 80%;
+}
+
+ul {
+  list-style: none;
+}
+
+.review-post {
+  background-color: lightgoldenrodyellow;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.review-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.review-title-link:hover{
+  text-decoration-color: #555;
+}
+
+/* SINGLE REVIEW PAGE STYLING */
+
+.review-container {
+  background-color: lightgoldenrodyellow;;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  margin: 20px 80px;
+  text-align: center;
 }
