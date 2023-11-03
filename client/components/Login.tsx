@@ -4,20 +4,6 @@ import { IfAuthenticated, IfNotAuthenticated } from './Authenticated'
 function Login() {
   const { loginWithRedirect, logout } = useAuth0()
 
-  // const navigate = useNavigate()
-  // const history = useHistory()
-
-  const handleLogin = () => {
-    loginWithRedirect({
-      appState: {
-        returnTo: `${window.location.origin}/reviews`,
-      },
-    })
-    window.location.reload()
-
-    // navigate('/reviews')
-    // history.push('/reviews')
-  }
   return (
     <>
       <IfAuthenticated>
@@ -26,7 +12,7 @@ function Login() {
         </button>
       </IfAuthenticated>
       <IfNotAuthenticated>
-        <button className="button" onClick={handleLogin}>
+        <button className="button" onClick={() => loginWithRedirect()}>
           Login
         </button>
       </IfNotAuthenticated>
