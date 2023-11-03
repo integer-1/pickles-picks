@@ -1,7 +1,7 @@
 import connection from './connection.ts'
-import { Review, User, SavedReview } from '../../models/reviews.ts'
+import { Review } from '../../models/reviews.ts'
 
-const reviewColumns = ['location', 'title', 'text', 'rating', 'date']
+// const reviewColumns = ['location', 'title', 'text', 'rating', 'date']
 
 export async function getAllReviews(db = connection): Promise<Review[]> {
   return db('reviews').select()

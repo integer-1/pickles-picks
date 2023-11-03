@@ -21,14 +21,14 @@ export function renderApp(location: string) {
   const queryClient = new QueryClient({
     defaultOptions: {
       queries: {
-        retry: false
-        },
+        retry: false,
       },
-      logger: {
-        log: console.log,
-        warn: console.warn,
-        error: () => {}
-      },
+    },
+    logger: {
+      log: console.log,
+      warn: console.warn,
+      error: () => {},
+    },
   })
 
   const container = render(
@@ -36,5 +36,5 @@ export function renderApp(location: string) {
       <RouterProvider router={router} />
     </QueryClientProvider>
   )
-  return { user, ...container}
+  return { user, ...container }
 }

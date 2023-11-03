@@ -16,7 +16,7 @@ root.render(
     clientId="0aYDBcR3n8DvWYO5kLpUinbLPdj2VDFF"
     authorizationParams={{
       redirect_uri: window.location.origin,
-      audience: "https://lostandfound/api",
+      audience: 'https://lostandfound/api',
     }}
   >
     <QueryClientProvider client={queryClient}>
@@ -24,5 +24,4 @@ root.render(
       <ReactQueryDevtools />
     </QueryClientProvider>
   </Auth0Provider>
-
 )

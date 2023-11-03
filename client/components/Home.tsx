@@ -16,7 +16,7 @@ function Home() {
   return (
     <>
       <div className="landing-page">
-        <h2>Welcome to Pickle's Picks!</h2>
+        <h2>Welcome to Pickle&apos;s Picks!</h2>
         <h3>See all my favourite places to eat!</h3>
         <Login />
         <Register />

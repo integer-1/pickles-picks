@@ -13,7 +13,7 @@ export async function getReviewById(id: number) {
   return res.body.review
 }
 
-export async function addReview(form: Review) {
-  const addedReview = await request.post(rootUrl + '/reviews')
-  return addedReview.body.talk
-}
+// export async function addReview(form: Review) {
+//   const addedReview = await request.post(rootUrl + '/reviews')
+//   return addedReview.body.talk
+// }
