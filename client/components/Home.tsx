@@ -21,8 +21,7 @@ function Home() {
         <img
           src="client/styles/MiscData/Screenshot 2023-11-03 103600.png"
           alt="Pickles portrait"
-          width="500"
-          height="500"
+          className="img"
         />
         <div className="landing-page-buttons">
           <Login />
