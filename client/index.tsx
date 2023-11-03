@@ -12,11 +12,11 @@ const router = createBrowserRouter(routes)
 const root = createRoot(document.getElementById('app') as HTMLElement)
 root.render(
   <Auth0Provider
-    domain="shrena-2023.au.auth0.com"
-    clientId="0aYDBcR3n8DvWYO5kLpUinbLPdj2VDFF"
+    domain="pikpiko-mark.au.auth0.com"
+    clientId="PLhgc7PqslLSpPXfcj0drSzekMo7D6Bi"
     authorizationParams={{
       redirect_uri: window.location.origin,
-      audience: 'https://lostandfound/api',
+      audience: 'https://pickles-picks.devacademy.nz/',
     }}
   >
     <QueryClientProvider client={queryClient}>
