@@ -19,7 +19,7 @@ function Home() {
         <h2>Welcome to Pickle&apos;s Picks!!</h2>
         <h3>See all my favourite places to eat!</h3>
         <img
-          src="client/styles/MiscData/Screenshot 2023-11-03 103600.png"
+          src="../../images/homepage-dog.png"
           alt="Pickles portrait"
           className="img"
         />
