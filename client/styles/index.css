@@ -1,72 +1,24 @@
+/* STYLES APPLYING TO ENTIRE DOCUMENT */
 body {
   font-family: Arial, sans-serif;
-  background-color: lightgoldenrodyellow;
   color: #333;
   margin: 0;
   padding: 0;
-}
-
-h1 {
-  text-align: center;
-  font-size: 2rem;
-  padding: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.nav {
-  text-align: center;
-  margin: 20px;
-}
-
-.dropdown {
-  padding: 10px;
-  font-size: 1rem;
-}
-
-.reviews-list {
-  margin: 0 auto;
-  width: 80%;
-}
-
-ul {
-  list-style: none;
-}
-
-.review-post {
-  background-color: lightgoldenrodyellow;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin: 20px 0;
-  padding: 20px;
-}
-
-.review-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
+  background-color: lightgreen;
 }
 
 a {
   text-decoration: none;
-  color: #007BFF;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: green;
   color: #fff;
   text-decoration: none;
   border: none;
@@ -77,16 +29,8 @@ body {
 }
 
 .button:hover {
-  background-color: #0056b3;
-}
-
-.review-container {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  margin: 20px;
-  text-align: center;
+  background-color:rgb(35, 168, 35);
+  text-decoration: none;
 }
 
 h1 {
@@ -112,6 +56,39 @@ p {
   text-align: center;
 }
 
+/* HEADER STYLING */
+.nav-container {
+  background-color: lightgoldenrodyellow;
+  width: 100%; /* 100% instead of 100vw makes it fit the view */
+  height: 80px;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-container{
+  padding: 20px;
+}
+
+.title-link:hover{
+  text-decoration-color: green;
+}
+
+.header-title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.authentication{}
+
+/* HOME.TSX / LANDING PAGE STYLING */
+
 .landing-page {
   background-color: lightgoldenrodyellow; 
   padding: 20px; 
@@ -130,29 +107,54 @@ p {
   color: lightseagreen; 
 }
 
-.button {
+.landing-page-buttons{}
+
+/* REVIEW LIST STYLING */
+
+.review-list-header {
   text-align: center;
-  margin-bottom: 0;
+  margin: 20px;
 }
 
-.button-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 0%;
+.dropdown {
+  padding: 10px;
+  font-size: 1rem;
 }
 
-.user-container {
-  display: flex;
-  align-items: center;
+.reviews-list {
+  margin: 0 auto;
+  width: 80%;
 }
 
-body, h1, h2, h3, p, ul, li {
-  margin: 5;
-  padding: 0;
+ul {
+  list-style: none;
 }
 
-body {
-  background-color: lightgreen;
+.review-post {
+  background-color: lightgoldenrodyellow;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 20px;
 }
 
+.review-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.review-title-link:hover{
+  text-decoration-color: #555;
+}
+
+/* SINGLE REVIEW PAGE STYLING */
+
+.review-container {
+  background-color: lightgoldenrodyellow;;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}

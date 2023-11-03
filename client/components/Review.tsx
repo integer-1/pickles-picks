@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import { getReviewById } from '../apis/reviews'
 import { useParams } from 'react-router-dom'
+import Header from './Header'
 
 const Review = () => {
   const { id } = useParams()
@@ -28,13 +29,16 @@ const Review = () => {
 
   const reviewById = review[0]
   return (
-    <div>
-      <h1>{reviewById.title}</h1>
-      <p>Location: {reviewById.location}</p>
-      <p>Rating: {reviewById.rating}</p>
-      <p>{reviewById.text}</p>
-      <p>Date: {reviewById.date}</p>
-    </div>
+    <>
+      <Header />
+      <div className="review-container">
+        <h2>{reviewById.title}</h2>
+        <p>Location: {reviewById.location}</p>
+        <p>Rating: {reviewById.rating}</p>
+        <p>{reviewById.text}</p>
+        <p>Date: {reviewById.date}</p>
+      </div>
+    </>
   )
 }
 

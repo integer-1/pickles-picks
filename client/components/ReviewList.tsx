@@ -47,7 +47,7 @@ function ReviewList() {
   return (
     <>
       <Header />
-      <div className="nav">
+      <div className="review-list-header">
         {' '}
         <h2>Dog-friendly recommendations ☕🍸🍝 reviewed by Pickles himself</h2>
         <select
@@ -63,7 +63,7 @@ function ReviewList() {
         <ul>
           {sortedReviews.map((review) => (
             <li key={review.id} className="review-post">
-              <Link to={`/reviews/${review.id}`}>
+              <Link to={`/reviews/${review.id}`} className="review-title-link">
                 <p className="review-title">{review.title}</p>
               </Link>
               <p>Location: {review.location}</p>

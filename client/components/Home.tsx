@@ -14,11 +14,11 @@ function Home() {
           width="500"
           height="500"
         />
-        <div className="authentication">
+        <div className="landing-page-buttons">
           <Login />
           <Register />
           <Link to="/reviews" className="button">
-            Continue without sign in
+            Continue Without Sign In
           </Link>
         </div>
       </div>
