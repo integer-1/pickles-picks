@@ -46,21 +46,23 @@ function ReviewList() {
   return (
     <>
       <Header />
-      <h1>Review List</h1>
-      <div className="nav">
+      <div className="review-list-header">
+        {' '}
+        <h2>Dog-friendly recommendations ☕🍸🍝 reviewed by Pickles himself</h2>
         <select
           className="dropdown"
           onChange={(e) => toggleSortOption(e.target.value)}
         >
-          <option value="desc">Rating Descending</option>
-          <option value="asc">Rating Ascending</option>
+          {' '}
+          <option value="desc">Top Rated</option>
+          <option value="asc">Lowest Rated</option>
         </select>
       </div>
       <div className="reviews-list">
         <ul>
           {sortedReviews.map((review) => (
             <li key={review.id} className="review-post">
-              <Link to={`/reviews/${review.id}`}>
+              <Link to={`/reviews/${review.id}`} className="review-title-link">
                 <p className="review-title">{review.title}</p>
               </Link>
               <p>Location: {review.location}</p>
