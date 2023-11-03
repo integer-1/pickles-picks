@@ -1,8 +1,18 @@
+import { useAuth0 } from '@auth0/auth0-react'
 import Login from './Login'
 import Register from './Register'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 
 function Home() {
+  const { isAuthenticated } = useAuth0()
+  const navigate = useNavigate()
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate('/reviews')
+    }
+  }, [isAuthenticated, navigate])
+
   return (
     <>
       <div className="landing-page">
